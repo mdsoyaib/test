@@ -1,0 +1,18 @@
+{% block navhead %}
+<nav class="header__menu">
+    <ul>
+        <li class="active"><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'shop' %}">Shop</a></li>
+        <li><a href="#">Pages</a>
+            <ul class="header__menu__dropdown">
+                <li><a href="{% url 'shop_details' %}">Shop Details</a></li>
+                <li><a href="{% url 'shoping_cart' %}">Shoping Cart</a></li>
+                <li><a href="{% url 'checkout' %}">Check Out</a></li>
+                <li><a href="{% url 'blog_details' %}">Blog Details</a></li>
+            </ul>
+        </li>
+        <li><a href="{% url 'blog' %}">Blog</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+</nav>
+{% endblock navhead %}
